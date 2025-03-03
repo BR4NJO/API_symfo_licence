@@ -3,3 +3,11 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+api_login_check:
+    path: /api/login_check
+
+send_email:
+    path: /send-email
+    controller: App\Controller\EmailController::sendEmail
+    methods: [POST]

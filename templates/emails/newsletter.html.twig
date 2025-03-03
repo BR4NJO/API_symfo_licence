@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Newsletter - Sorties jeux vidéo</title>
+</head>
+<body>
+    <h1>Sorties jeux vidéo cette semaine</h1>
+    <ul>
+        {% for game in games %}
+            <li><strong>{{ game.title }}</strong> - Sortie le {{ game.releaseDate }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
